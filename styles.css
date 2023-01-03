@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*-------header---------*/
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 50px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+header a.logo{
+    display: block;
+}
+
+header .logo svg{
+    fill: #e50914;
+    height: 45px;
+}
+
+header div+div{
+    text-align: right;
+}
+
+header a.sign-in{
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 6px 17px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+select{
+    display: inline-block;
+    background-color: #333;
+    background: transparent;
+    color:#fff;
+    border: 1px solid rgb(rgb(190, 190, 190));
+    border-radius: 3px;
+    padding: 8px 0 7px 20px;
+}
+
+.select{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header option{
+    background-color: rgb(59, 59, 59);
+}
+
+.select svg{
+    height: 15px;
+    color: #fff;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.story-cards{
+    padding: 70px 45px;
+    position: relative;
+    height: 760px;
+    border-bottom:#333 solid 8px;
+}
+
+.story-cards .story-card-background{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: -70px;
+    z-index: 0;
+    background-size: cover;
+}
+
+.story-card-background img{
+    opacity: 0.6;
+    object-fit: contain;
+    width: 100%;
+    transform: none;
+
+}
+
+.story-cards .story-card-text{
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 170px 100px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.story-card-text{
+    max-width: 640px;
+}
+
+.story-card-text h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.story-card-text h2{
+    font-size: 1.625rem;;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.story-card-text h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.story-card-text .form-content{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.story-card-text input{
+    padding: 17px;
+    width: 100%;
+}
+
+.story-card-text input ~ label{
+    position: absolute;
+    left:17px;
+    top:17px;
+    z-index: 5;
+    color: rgb(97, 97, 97);
+    font-size: 17px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.story-card-text input:focus ~ label{
+    top: 1px;
+    font-size: 13px;
+}
+
+.story-card-text input:focus{
+    padding-top: 19px;
+    padding-bottom: 13px;
+    font-size: 15px;
+    outline: none;
+}
+
+.story-card-text button{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    width: 250px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 17px;
+    border-radius: 2px;
+    font-weight: 400;
+}
+
+/*------------cards------------------*/
+
+.story-card-section .section-one, .section-two, .section-three, .section-four{
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr;
+    gap: 46px;
+    padding: 70px;
+    justify-content: center;
+    border-bottom: 8px solid #333;
+}
+
+.story-card-section h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.story-card-section h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.story-card-section .section-text{
+    height: 100%;
+    width: 600px;
+    padding: 60px 5%;
+    text-align: left;
+}
+
+.story-card-section .sectionImg{
+    height: 100%;
+    width: 600px;
+}
+
+.story-card-section img{
+    align-content: center;
+    height: auto;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+
+
+/*----------FAQ-------------*/
+
+.faq{
+    padding: 75px 45px;
+    border-bottom: 8px solid #333;
+}
+
+.faq h1{
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.accordion{
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 23px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.accordion label::after{
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    transition: transform 0.1s;
+}
+
+.accordion input[type="checkbox"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.accordion input[type="checkbox"]:checked ~ .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="checkbox"]:checked + label::after{
+    transform: rotate(45deg);
+}
+
+.faq h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.faq .story-card-text{
+    padding: 20px 100px;
+}
+
+.footer{
+    width: 100%;
+    padding: 75px 25% 10px;
+    margin-bottom: 20px;
+}
+
+.footer p{
+    color: #777;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.footer-content .row{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    flex-grow: 25%;
+}
+
+.footer .col{
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    max-width: max-content;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    font-size: 14px;
+    padding: 25px 0 20px;
+}
