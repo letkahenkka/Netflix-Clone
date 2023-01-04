@@ -101,7 +101,6 @@ header option{
     object-fit: contain;
     width: 100%;
     transform: none;
-
 }
 
 .story-cards .story-card-text{
@@ -191,6 +190,7 @@ header option{
     padding: 70px;
     justify-content: center;
     border-bottom: 8px solid #333;
+    margin: 0 -5%;
 }
 
 .story-card-section h1{
@@ -206,7 +206,7 @@ header option{
 
 .story-card-section .section-text{
     height: 100%;
-    width: 600px;
+    width: 650px;
     padding: 60px 5%;
     text-align: left;
 }
@@ -216,10 +216,75 @@ header option{
     width: 600px;
 }
 
+.section-one img{
+    position: relative;
+    margin: -5% 0;
+}
+
+.section-one video{
+    height: 203px;
+    width: 100%;
+    left: 65.6%;
+    top: 130.6%;
+    max-height: 54%;
+    max-width: 73.5%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.sectionTwoAnimation{
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 29%;
+    top: 207%;
+    margin: 0 auto;
+    min-width: 15em;
+    padding: 0.25em 0.65em;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 100px;
+}
+
+.section-two .animationImage img{
+    height: 5em;
+    width: auto;
+}
+
+.sectionTwoAnimation .animation-text{
+    padding-left: 15px;
+    padding-right: 80px;
+}
+
+.sectionTwoAnimation .text1{
+    font-weight: 500;
+}
+
+.sectionTwoAnimation .text2{
+    color: #0071eb;
+}
+
+.section-two .animationGif{
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+
 .story-card-section img{
     align-content: center;
     height: auto;
-    width: 450px;
+    width: 500px;
     box-sizing: border-box;
 }
 
@@ -230,6 +295,7 @@ header option{
 .faq{
     padding: 75px 45px;
     border-bottom: 8px solid #333;
+    margin: 0 -5%;
 }
 
 .faq h1{
@@ -276,7 +342,7 @@ header option{
     position: absolute;
     right: 20px;
     top: 5px;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
 }
 
 .accordion input[type="checkbox"]{
@@ -289,7 +355,7 @@ header option{
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s;
+    transition: max-height 0.2s;
 }
 
 .accordion input[type="checkbox"]:checked ~ .content{
@@ -344,7 +410,21 @@ header option{
     margin-bottom: 10px;
 }
 
+.footer select{
+    color:#777;
+}
+
+.footer svg{
+    color:#777;
+}
+
+.footer option{
+    color:#fff;
+    background-color: #000;
+}
+
 .copyright{
     font-size: 14px;
     padding: 25px 0 20px;
 }
+
